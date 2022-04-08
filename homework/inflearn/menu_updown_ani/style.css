@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Noto+Sans:wght@400;700&display=swap');
+body{ font-family: 'Noto Sans', sans-serif; color: #222; line-height: 1.5; font-weight: 300; margin: 0; background-color: linear-gradient(180deg, #dce35b, #45b649); height: 100vh; }
+a{ color: #222; text-decoration: none;} 
+.nav{}
+.nav a{ color: var( --main-color); background-color: var(--sub-color);}
+.nav span{}
+.nav span:nth-child(1){}
+.nav span:nth-child(2){}
+:root{
+    --main-color: orange;
+    --sub-color: blue;
+
+ }
+
+
+
+

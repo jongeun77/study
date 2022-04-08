@@ -1,0 +1,77 @@
+@media screen and (max-width: 360px){
+/* display: none */
+ header{ display: block;}
+.visual{ display: block;} 
+
+
+
+
+
+
+/* swiper*/
+.swiper-container{ height: 70rem;}
+section#contents .visual .swiper-pagination-bullet {  display: none; }
+section#contents .visual .swiper-pagination-bullet-active{ position: relative; background-color: #f9be2c;}
+.swiper-pagination { top: 50rem; left: 50%;}
+section#contents .visual .swiper-pagination-bullet-active:before{ content: ""; background-color: #fff; width: 3.2rem; height: 3.2rem; position: absolute; border-radius: 50%;top: -14px; right: -13px; z-index: -1; border: 1px solid rgba(0,0,0,0.2);}
+section#contents .visual .swiper-button-prev{ left: 2rem; top: 90rem; background: url(../images/pre@3x.png)no-repeat center/cover;}
+section#contents .visual .swiper-button-next { background: url(../images/next@3x.png)no-repeat center/cover; left: 32rem; top: 90rem;}
+.paging__num { display: none;}
+.container { padding: 0 2rem;}
+header { width: 100%; padding: 2rem 0;}
+header .container a h1 {  background-image: url(../images/logo.png), url(../images/X.png), url(../images/ci_stone.png); background-position: 0 0, 13rem 0.4rem, 15rem 0; background-size: 40%, 0.9rem 0.9rem ,12% ; width: 30rem; height: 4rem; }
+nav ul.gnb__pc { display: none;}
+#gnb .toggle { position: absolute; top: 1.4rem; right: 2rem; width: 3rem; height: 4rem;}
+#gnb .toggle span{ width: 100%; height: 0.3rem; background-color: #000;  display: inline-block;}
+
+section#contents .visual .container { padding: 0 2rem; flex-direction: column; align-items: center; justify-content: center;}
+section#contents .visual__txt { text-align: center; }
+section#contents .visual { height: auto;}
+section#contents .visual:before { height: 100vh;}
+section#contents .visual .container .visual__txt h2 { font-size: 4.8rem; padding-top: 16rem;}
+section#contents .visual .container .visual__txt p { font-size: 2rem; font-weight: 600; width: 100%;}
+section#contents .visual .container .visual__txt .visual__txt-btn { position: relative; color: #f9be2c; padding: 20px 101px 21px; background-color: #444;  border-radius: 3.6rem; font-size: 1.8rem; font-weight: 400;}
+section#contents .visual .container .slider{ display: flex; z-index: 100;}
+section#contents .visual .container .visual__slide{ margin-top: 6rem; }
+section#contents .visual .container .visual__slide .visual__slide-card img{ border-radius: 3.6rem 3.6rem 0 3.6rem; width: 34rem; margin: 0; padding: 0; }
+section#contents .visual .container .visual__slide .visual__slide-card .more{ display: none;}
+section#contents .visual .container .visual__slide .visual__slide-card .hash { font-size: 1.2rem;  padding: 2px 10px 5px; border-radius: 12px; border: solid 1px #c7c7c7; color: #c7c7c7; margin: 0 0.4rem; background-color: #fff;}
+section#contents .visual .container .visual__slide .visual__slide-card .slide-hash{ margin-left: 1rem;}
+section#contents .visual .container .visual__slide .visual__slide-card p { font-size: 1.8rem; }
+
+section#contents .main{ display: flex; position: relative; flex-wrap: wrap; justify-content: center; }
+section#contents .main .board01 { flex: 100%;  padding: 4rem 5% 4.6rem; flex-direction: column; height: 70vh;}
+section#contents .main .board01 .detail:before{ top: 5rem; right: 4rem; cursor:pointer;}
+section#contents .main .board01 ul li a { color: #fff; display: flex; justify-content: space-between; flex-direction: column;}
+section#contents .main .board01 .ellipsis { padding-bottom: 1rem;}
+section#contents .main .board01 ul li a .small { padding-bottom: 0.4rem;}
+
+section#contents .main .board02{ width: 100%;}
+section#contents .main .board02 ul{ display: flex; flex-wrap: wrap;}
+section#contents .main .board02 ul li{  height: 17rem; padding: 1rem; position: relative; max-width: 20rem;}
+section#contents .main .board02 ul li:nth-child(2){ background: url(../images/img_03@2x.png)no-repeat center/cover;}
+section#contents .main .board02 ul li:nth-child(3){ background: url(../images/img_03@2x.png)no-repeat center/cover;}
+section#contents .main .board02 ul li a{ color: #fff; display: flex; flex-direction: column; text-align: left; width: 100%; height: 100%; z-index: 100;}
+section#contents .main .board02 ul li a em{ font-weight: 700; font-size: 4.8rem; font-style: normal; z-index:100;}
+section#contents .main .board02 ul li a p{ font-size: 1.2rem; z-index: 100; line-height: 1.2;}
+section#contents .main .board02 ul li a:before{ content: ""; background: #444; opacity: 0.6; width: 100%; height: 100%;  position: absolute; top: 0; left: 0; border-radius: 3.6rem  3.6rem 0 3.6rem; transition: all 0.3s;}
+section#contents .main .board02 ul li a:hover:before{ opacity: 0.4;}
+section#contents .main .board02 .detail:before{right: 4rem; }
+section#contents .main .board02:after{ display: none;}
+section#contents .main .board03{ padding: 0; height: 70vh; }
+section#contents .main .board03 p{ font-size: 2rem; color: #444; font-weight: 700; margin: 0;}
+section#contents .main .board03 p span{ color: #97a70a;}
+section#contents .main .board03 h3.title{ font-size: 6rem; font-family: 'Recipekorea';color: #97a70a; padding-top: 1.6rem;}
+section#contents .main .board03 .board03__box p:nth-of-type(2){ color: #888; font-size: 1.4rem; line-height: 1.5;padding-bottom: 4.2rem; }
+section#contents .main .board03 .board03__box{ max-width: 24rem; display: flex; flex-direction: column; align-items: stretch;}
+section#contents .main .board03 a.board03__view{ font-size: 1.4rem; color: #97a70a; display: flex; position: relative; cursor: pointer;}
+section#contents .main .board03 a.board03__view img{ width: 12.4rem; height: 1rem; position: relative; transition: all 0.1s;}
+section#contents .main .board03 a.board03__view .board03__arrow{ margin-right: 1.5rem; font-weight: bold;}
+section#contents .main .board03 a.board03__view:before{ content: ""; width: 5.4rem; height: 5.4rem; background-color: #97a70a; border-radius: 50%; position: absolute; top: -1.9rem; left: 17rem; } 
+section#contents .main .board03 a.board03__view:hover img{ margin-left: 1rem; }
+
+footer .info { padding: 4rem 2rem;}
+footer .sites { padding: 0;}
+footer .sites ul{ justify-content: center;}
+footer .address{ text-align: center;}
+}

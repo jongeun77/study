@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>split hover effect</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Noto+Sans:wght@400;700&display=swap');
+        body{ color: #222; line-height: 1.5; font-weight: 300; margin: 0; color: #fff; background-color: #000;}
+        a{ text-decoration: none;}
+        ul,li{ margin: 0; padding: 0;}
+        .items{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; width: 100%;}
+        .item{ width: 300px; text-align: center; display: inline-block; height: 200px; position: relative;}
+        .front, .back{ position: absolute; transition: 0.5s; top: 0;}
+        .front{ background-color: #333; text-align: center; height: inherit; z-index: 1; width: 100%;}
+        .front h2{ margin-top: 0;}
+        .back{ background-color: #fff; color: #000; height: inherit; text-align: center; padding: 2px; box-sizing: border-box;}
+        .back p{}
+        .back a{ background-color: yellowgreen; color: #fff; padding: 5px 15px; border-radius: 20px; display: inline-block;}
+        .back a:hover{ background-color: #000;}
+        .item:hover .front{ top: -50%;}
+        .item:hover .back{ top: 50%;}
+        .item:hover .front img{ animation: ani 1s linear infinite;}
+        @keyframes ani{
+        0%{ transform: scale(0.7)}
+        50%{ transform: scale(1.2);}
+        100%{ transform: scale(0.7);}
+        }
+    </style>
+</head>
+<body>
+    <div class="items">
+        <div class="item">
+            <div class="front">
+                <img src="../images/space-01.png" alt="">
+                <h2>Mars</h2>
+            </div>
+            <div class="back">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora laboriosam dolores voluptatum nesciunt a?</p>
+                <a href="#none">Read More</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="front">
+                <img src="../images/space-02.png" alt="">
+                <h2>Jupitor</h2>
+            </div>
+            <div class="back">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora laboriosam dolores voluptatum nesciunt a? </p>
+                <a href="#none">Read More</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="front">
+                <img src="../images/space-03.png" alt="">
+                <h2>Saturnus</h2>
+            </div>
+            <div class="back">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora laboriosam dolores voluptatum nesciunt a? </p>
+                <a href="#none">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

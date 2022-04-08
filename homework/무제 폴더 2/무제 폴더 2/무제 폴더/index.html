@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="한국문화예술위원회">
+    <meta name="keywords" content="한국문화예술위원회, 분석용시각화, 데이터정보, 활용사례, 예바세">
+    <!-- fontawesome -->
+   <script src="https://kit.fontawesome.com/a69c137eb6.js" crossorigin="anonymous"></script>
+    <!-- css & js -->
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- swifer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="./js/main.js" defer></script>
+    <title>한국문화예술위원회</title>
+</head>
+<body>
+    <!-- skipnavigation -->
+    <div class="skip">
+        <a href="#gnb">주 메뉴 바로가기</a>
+        <a href="#contents">콘텐츠 바로가기</a>
+        <a href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- header -->
+    <div class="wrap">
+    <header class="header">
+        <div class="container">
+            <a>
+                <h1 class="logo">
+                    <span class="blind">한국문화예술위원회</span>
+                </h1>
+            </a>
+            <nav id="gnb">
+                <!-- pc menu -->
+                <ul class="gnb__pc">
+                    <li><a href="">분석률시각화</a></li>
+                    <li><a href="">데이터정보</a></li>
+                    <li><a href="">기술융합</a></li>
+                    <li><a href="">활용사례</a></li>
+                    <li><a href="">예바세</a></li>
+                </ul>
+                <!-- mobile menu --> 
+                <div class="gnb__mo-wrap active">
+                    <ul class="gnb__mo">
+                        <li><a href="">분석률시각화</a></li>
+                        <li><a href="">데이터정보</a></li>
+                        <li><a href="">기술융합</a></li>
+                        <li><a href="">활용사례</a></li>
+                        <li><a href="">예바세</a></li>
+                    </ul>
+                    <button class="close"><i class=""></i></button>
+                </div>
+                <a class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <!-- header : EOD -->
+    <!-- section: contents -->
+    <section id="contents">
+        <!-- visual -->
+        <div class="visual" id="visual">
+            <div class="container">
+                <div class="visual__txt">
+                    <h2>분석용시각화</h2>
+                    <p>분석용시각화에 대한 설명문구가
+                    보여집니다.</p>
+                    <a href="" class="visual__txt-btn">자세히보기 
+                        <span class="detail"></span>
+                    </a>
+                </div>
+                <!-- swiper slide -->
+                <div class="swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="visual__slide swiper-slide">
+                            <div class="visual__slide-card">
+                                    <div class="visual__slide-img">
+                                        <img src="./images/img_01.png" alt="map">
+                                        <button class="more"></button>
+                                    </div> 
+                                    <span class="hash">#문화시설</span>
+                                    <span class="hash">#유동인구</span>
+                                <p>지역단위 문화시설별 유동인구 분석</p>
+                            </div>
+                        </li>
+                        <li class="visual__slide swiper-slide">
+                            <div class="visual__slide-card">
+                                <div class="visual__slide-img">
+                                    <button class="more"></button>
+                                    <img src="./images/img_02.png" alt="map">
+                                </div>
+                                    <span class="hash">#작은미술관 </span>
+                                    <span class="hash">#유동인구</span>
+                                <p>작은미술관 유동인구 분석</p>
+                            </div>
+                        </li>
+                        <li class="visual__slide swiper-slide">
+                            <div class="visual__slide-card">
+                                <div class="visual__slide-img">
+                                    <img src="./images/img_03.png" alt="map">
+                                    <button class="more"></button>
+                                </div>
+                                    <span class="hash">#예술</span>
+                                    <span class="hash">#지원사업</span>
+                                    <span class="hash">#분야</span>
+                                <p>예술관련 지원사업정보 (분야별)</p>
+                            </div>
+                        </li>
+                        <li class="visual__slide swiper-slide">
+                            <div class="visual__slide-card ">
+                                <div class="visual__slide-img">
+                                    <button class="more"></button>
+                                    <img src="./images/img_04.png" alt="map">
+                                </div>
+                                    <span class="hash">#예술</span>
+                                    <span class="hash">#지원사업</span>
+                                    <span class="hash">#분야</span>
+                                <p>예술관련 지원사업정보 (분야별)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+	            <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="paging__num">
+                <div class="paging__num-left">1</div>
+                <div class="paging__num-slash">/</div>
+                <div class="paging__num-right">5</div>
+            </div>
+        </div>
+        <!--- visual : EOD -->
+        <!-- main -->
+        <div class="main">
+            <div class="board01" id="board01">
+                <h3 class="title">데이터정보</h3><a class="detail"></a>
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="board01__list">
+                                <p class="ellipsis">국내 총 인구 대비 예술공간 비율 정보</p>
+                                <span class="small">한국문화예술위원</span>
+                            </div>
+                            <span class="date">2021.01.31</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="board01__list">
+                                <p class="ellipsis">국내 총 인구대비 복지요금제 사용 지역별 분석</p>
+                                <span class="small">한국문화예술위원</span>
+                            </div>
+                            <span class="date">2021.01.31</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="board01__list">
+                                <p class="ellipsis">기획/제작사 지역/장르별 분석 정보</p>
+                                <span class="small">예술경영지원센터</span>
+                            </div>
+                            <span class="date">2021.01.31</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="board02" id="board02">
+                <h3 class="title">활용사례</h3><a class="detail"></a>
+                <ul>
+                    <li>
+                        <a href="">
+                            <em>#01</em>
+                            <p>'ART NEXT DOOR'-미술을 더 가까이, 손안에 미술관이 들어오다 아트맵 김선영 대표</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>#02</em>
+                            <p>'ART NEXT DOOR'-미술을 더 가까이, 손안에 미술관이 들어오다 아트맵 김선영 대표</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <em>#03</em>
+                            <p>'ART NEXT DOOR'-미술을 더 가까이, 손안에 미술관이 들어오다 아트맵 김선영 대표</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="board03" id="board03">
+                <div class="board03__box">
+                    <p><span>예</span>술데이터가 <span>바</span>꾸는 <span>세</span>상</p>
+                    <h3 class="title">예.바.세</h3>
+                    <p>문화예술분야 빅데이터 센터의 데이터를
+                        활용한 기획 아이디어</p>
+                    <a class="board03__view">
+                        <span class="board03__arrow">자세히보기</span><img src="./images/arrow@3x.png" alt="arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- main : EOD -->
+    </section>
+    <!-- section: contents : EOD -->
+    <footer id="footer">
+        <div class="sites">
+            <ul>
+            <li><a href=""><img src="./images/logo.png" alt="한국문화예술위원회"></a></li>
+            <li><a href=""><img src="./images/ci_02.png" alt="한국문화예술위원"></a></li>
+            <li><a href=""><img src="./images/ci_03.png" alt="한국문화예술교육진흥원"></a></li>
+            <li><a href=""><img src="./images/ci_04.png" alt="예술경영지원센터"></a></li>
+            <li><a href=""><img src="./images/ci_05.png" alt="한국예술인복지재단"></a></li>
+            <li><a href=""><img src="./images/ci_06.png" alt="한국문화예술회관연합회"></a></li>
+        </ul>
+    </div>
+    <div class="info">
+        <div class="logo"><img src="./images/ci@3x.png" alt="logo"></div>
+        <div class="address">
+            <p>(58326) 전라남도 나주시 빛가람로 640 (빛가람동 352) 한국문화예술위원회    대표전화 061-900-2100, 2200
+            Copyright 2020 Arts Council Korea. All Rights Reserved.</p>
+        </div>
+    </div>
+    </footer>
+    </div>
+</body>
+</html>
