@@ -45,6 +45,7 @@
   }
   #feature2{
     background-color: rgb(250, 215, 215);
+    font-size: 20px;
   }
   #feature3{
     background-color: rgb(236, 250, 215);
@@ -64,8 +65,12 @@ header{
     transition: 0.35s;
 }
 header.active{
-    background-color: #fff;
+    background-color: #203049;
+    color: #fff;
     box-shadow: 3px 0 3px rgba(0,0,0,0.1);
+}
+header.active a{
+  color: #fff;
 }
 .header_inner{
     padding: 20px 30px;
@@ -85,7 +90,6 @@ header.active{
     position: relative;
     border: 1px solid #ddd;
     padding: 4px 4px 4px 12px;
-    margin-bottom: 8px;
     border-radius: 3px;
     cursor: pointer;
     font-size: 20px;
@@ -93,21 +97,21 @@ header.active{
     background-color: #fff;
     transition: 0.35s;
 }
-.accordion .title:hover{
+.title:hover{
     color: #fff;
     background-color: #203049;
 }
-.accordion .title.active{
+.title.active{
     color: #fff;
     background-color: #203049;
 }
-.accordion .title.active:before{
+.title.active:before{
     color: orange;
     transform: rotate(90deg);
 }
 .accordion .title:before{
     content: "\f105";
-    font-family: fontawesome;
+    font-family: "fontawesome";
     position: absolute;
     top: 6px;
     right: 14px;
@@ -119,6 +123,94 @@ header.active{
     line-height: 1.4;
     display: none;
 }
-.desc.active{
-    display: block;
+/* gototop button : 유니코드는 a의 before 해야 클릭됨, transform:translateY(), transition, opacaity 사용*/
+.go_btn{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #203049;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: 0.35s;
+  opacity: 0;
 }
+
+.go_btn a:before{
+  content: "\f062";
+  font-family: "Fontawesome";
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 14px);
+}
+.go_btn.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* slider custom btn : 앞에 부모클래스 붙여야 먹힘. */
+
+.review-content{
+  width: 900px;
+  text-align: center;
+  background-color: #fff;
+}
+.slogan{
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.review-slider{
+  padding: 0 20px;
+}
+
+/* dot */
+/* dot 중앙정렬 */
+.slick-dots{
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* 액티브전 동그라미 */
+.review-slider .slick-dots li button:before {
+  color: #203049;
+  font-size: 12px;
+  opacity: 1;
+  top: -3px;
+}
+.review-slider .slick-dots li {
+  margin: 14px 0;
+}
+/* 액티브한 li의 동그라미 */
+.review-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: transparent;
+  border-radius: 8px;
+  top: 0;
+  width: 22px;/*길게*/
+  height: 12px;
+  background-color: #203049;
+}
+
+/* 화살표 */
+/* 화상표 모양 */
+.review-slider .slick-prev:before,
+.review-slider .slick-next:before{
+  content:"\f104";
+  font-family: 'fontawesome';
+  font-size: 40px;
+  opacity: 1;
+  color: #203049;
+  display: block;
+ 
+}
+.review-slider .slick-next:before{
+  transform: rotate(180deg);
+}
+/* 화살표 위치 */
+.slick-prev, .slick-next{
+  
+}
+/*  */
