@@ -213,4 +213,58 @@ header.active a{
 .slick-prev, .slick-next{
   
 }
-/*  */
+/* Tab */
+.tab{
+  width: 900px;
+  margin: auto;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+.tab_inner{
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.tab_btn{
+  font-size: 22px;
+  padding: 4px;
+  color: #555;
+  font-weight: normal;
+  /* flex: 1; */
+  width: calc(100%/3);
+  transition: 0.2s;
+}
+.tab_btn.active{
+  color: #203049;
+  border-bottom: 2px solid #203049;
+  font-weight: bold;
+}
+.list_inner{
+  padding: 0;
+  height: 350px;
+  background-color: #fff;
+  position: relative;
+}
+.list{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  padding: 100px 20px;
+  background-color: #eee;
+  text-align: center;
+  transition: 0.2s;
+  display: none;
+}
+.list:nth-child(2){
+  background-color: #999;
+}
+.list:nth-child(3){
+  background-color: #555;
+}
+.list.active{
+  display: block;
+}
