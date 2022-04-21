@@ -268,3 +268,69 @@ header.active a{
 .list.active{
   display: block;
 }
+/* drop menu */
+
+#feature4{
+  align-items: flex-start;
+}
+.dropdown_inner{
+  width: 700px; display: flex;
+}
+.dropdown{ 
+  width: calc(100%/3);
+  text-align: center; 
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+}
+.dropdown_btn{
+   width: inherit; 
+   border: none; 
+   outline: none; 
+   padding: 6px; 
+   box-sizing: border-box; 
+   font-size: 18px; 
+   color: #fff; 
+   background-color: #203049; 
+   cursor: pointer;
+  }
+  .dropdown_btn:hover{
+    background-color: #3f5e8f;
+  }
+.dropdown_submenu{ 
+  display: none; 
+  width: 700px; 
+  height:400px; 
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+  background-color: #fff;
+  margin: 0;
+  padding: 20px 0 0;
+  font-size: 20px;
+}
+.dropdown:nth-child(1) > li .dropdown_submenu{
+  position: absolute;
+  left: 0;}
+.dropdown:nth-child(2) > li .dropdown_submenu{
+  position: absolute;
+  left: -233px;}
+.dropdown:nth-child(3) > li .dropdown_submenu{ 
+  position: absolute;
+  left: -467px;
+}
+.dropdown_submenu > li{ 
+  text-align: center;
+}
+.dropdown_submenu > li > a{ 
+  display: block; 
+  padding: 10px; 
+  width: 100%; 
+  box-sizing: border-box;
+}
+.dropdown_submenu > li > a:hover { 
+  background-color: #eee;
+}
+.dropdown:hover .dropdown_submenu{ 
+  display: block;
+}
