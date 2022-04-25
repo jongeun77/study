@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let id ='ezen', userid, level
+        userid = prompt('아이디를 입력하세요');
+
+        if( userid == id){
+            level = Number(prompt('회원레벨을 입력하세요'));
+            
+            if( level >=5 && level <=10){
+                document.write( level, '레벨은 해당컨텐츠를 사용할수 있습니다');
+            }else{
+                document.write(level, '레벨은 해당컨텐츠를 사용할수 없습니다');
+            }
+        }else{
+            document.write('해당아이디가 존재하지 않습니다. 다시 입력하세요.');
+        }
+    </script>
+</head>
+<body>
+    <pre>
+        id='ezen', userid, level
+        아이디가 일치하면
+            level 입력받기
+            5~10레벨이면
+                xx레벨은 해당컨텐츠를 사용할수 없습니다
+            그렇지 않으면 
+                xx레벨은 해당컨텐츠에 접근할수 없습니다
+        그렇지 않으면 
+            해당 아이디가 존재하지 않습니다. 다시 입력하세요.
+    </pre>
+</body>
+</html>

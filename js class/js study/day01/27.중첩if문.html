@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let id = 'ezen', pw = '1234', userid, userpw;
+        userid = prompt('아이디 입력');
+        
+        if( id== userid){
+            userpw = prompt('비밀번호 입력');
+            if( pw == userpw){
+                alert('로그인성공');
+            }else{
+                alert('비밀번호 오류')
+            }
+        }else{
+            alert('아이디 오류');
+        }
+
+
+
+
+
+        // if(id == userid && pw == userpw){
+        //     alert('성공');
+        // }else{
+        //     alert('실패');
+        // }
+    </script>
+</head>
+<body>
+    <pre>
+        id = ezen
+        pw = '1234'
+
+        아이디가 일치했을떄
+            비밀번호 받기
+            비밀번호가 일치하면 로그인 성공
+            그렇지 않으면 비밀번호 오류
+    </pre>
+</body>
+</html>

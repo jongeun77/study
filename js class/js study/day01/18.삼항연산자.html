@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let userName, userHeight, userWeight, avgWeight, result, reH;
+        userName = prompt('이름을 입력하세요');
+        userHeight = Number(prompt('키을 입력하세요'));
+        userWeight = Number(prompt('몸무게를 입력하세요'));
+        reH = userHeight/ 100;
+        avgWeight = reH * reH *21;
+        document.write('평균체중은', avgWeight, '입니다.');
+
+        result = userWeight > avgWeight ? '과체중': '정상체중';
+        document.write('<br>',userName, '님의 결과는', result,'입니다')
+
+    </script>
+</head>
+<body>
+    <pre>
+        
+        평균 몸무게 구하기
+        키: 160, 몸무게: 55
+        표준체중: 1.6 * 1.6 * 21 = 53.76
+
+        prompt
+        userName : 이름
+        userHeight : 키
+        userWeight : 몸무게
+        reH : 1.6
+        avgWeight : 1.6 * 1.6 * 21 = 53.76
+
+        평균체중은 xxx입니다
+
+        result = 결과
+
+        
+        홍길동은 과체중입니다
+        홍길동은 정상체중입니다
+
+        조건 ? 참:거짓
+
+    </pre>
+</body>
+</html>
