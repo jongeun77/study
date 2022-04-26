@@ -30,13 +30,18 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: Pretendard,-apple-system,system-ui,Roboto,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
 }
-ol, ul {
+ol, ul, li{
 	list-style: none;
 }
 a{
     color: black;
     text-decoration: none;
+}
+a:visited{ 
+
+    transition: 0.3s;
 }
 blockquote, q {
 	quotes: none;
