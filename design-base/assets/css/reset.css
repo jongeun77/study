@@ -28,6 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+*{ 
+	box-sizing: border-box;
+}
 body {
 	line-height: 1;
 	font-family: Pretendard,-apple-system,system-ui,Roboto,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
