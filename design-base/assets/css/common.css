@@ -59,8 +59,8 @@ h2.sec-tit+span{ font-size: 15px; color: #32353a; font-weight: normal; display: 
 h2.sec-tit a{ color: #171718; background: url("http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-arrow-right-b.svg") no-repeat right/12px; padding-right: 20px; }
 /* section recent */
 .recent-list{ display: flex; justify-content: space-around; flex-wrap: wrap;}
-.recent-list li{ width: 25%; padding: 12px 12px 40px 12px; position: relative;}
-.recent-list li .img-box{  overflow: hidden;  border-radius: 12px; }
+.recent-list li{ width: 25%; padding: 12px 12px 40px 12px; }
+.recent-list li .img-box{ overflow: hidden;  border-radius: 12px; position: relative;}
 .recent-list li .img-box a:first-of-type{ width: 100%; display: inline-block; height: 100%;}
 .recent-list li .img-box img{ width: 100%; transition: 0.2s;}
 .recent-list li .img-box a:hover img{ transform: scale(1.1); }
@@ -68,10 +68,9 @@ h2.sec-tit a{ color: #171718; background: url("http://designbase.co.kr/wp-conten
 .recent-list li .txt-box p{ font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: normal; word-wrap: break-word; line-height: 1.5;}
 .recent-list li .txt-box .section-link{ padding: 6px; margin: 6px 0; background-color: #EEF2F6; font-size: 12px; border-radius: 4px; display: inline-block; transition: 0.2s;}
 .recent-list li .txt-box .section-link:hover{ background-color: #004fff; color: #fff;}
-.icon{ position: absolute; top: 20px; left: 20px; background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-threejs.svg) no-repeat center/contain; width: 14px; height: 14px; }
+.icon{ position: absolute; top: 20px; left: 20px; background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-threejs.svg) no-repeat center/contain; width: 14px; height: 14px; z-index: 10;}
+.recent-list li:nth-child(9) .img-box .icon, .recent-list li:nth-child(10) .img-box .icon, .recent-list li:nth-child(11) .img-box .icon, .recent-list li:nth-child(12) .img-box .icon { background: url(http://designbase.co.kr/wp-content/themes/designbase/assets/svg/icon-membership.svg) no-repeat center/contain; }
 
 
 
-@media only screen and (max-width: 1440px){
-    section{ }
-}
+
