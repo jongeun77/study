@@ -1,4 +1,4 @@
-//number, parseInt, String, toString, toFixed
+number, parseInt, String, toString, toFixed
 let a = 10;
 
 console.log( a, typeof a);
@@ -15,7 +15,7 @@ console.log('=====');
 
 let b1 ='200';
 console.log(b1, typeof b1);
-b1 = parseInt(b1);
+b1 = parseInt(b1); //문자열을 파싱하여 문자열에 포함된 숫자를 number로 형변환한다
 console.log(b1, typeof b1);
 
 let c1 ='50px';

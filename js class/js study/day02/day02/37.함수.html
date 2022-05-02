@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>함수 커피주문</title>
+    <script>
+        'use strict'
+      /*  function make1(){
+           alert('아메리카노를 주문했습니다.');
+       }
+       function make2(){
+           alert('카페라떼를 주문했습니다');
+       }
+       function make3(){
+           alert('오늘의커피를 주문했습니다.');
+       }
+       function make4(){
+           alert('카라멜마끼아토를 주문했습니다');
+       } */
+
+       function make(menu){
+           alert(`${menu}를 주문했습니다.`);
+       }
+       
+    </script>
+</head>
+<body>
+    <h2>커피주문하기</h2>
+    <!-- this 자기자신 -->
+  <input type="button" value="아메리카노" onclick="make(this.value)">
+  <input type="button" value="카페라떼" onclick="make(this.value)">
+  <input type="button" value="오늘의커피'" onclick="make('오늘의커피')">
+  <input type="button" value="카라멜마끼아토" onclick="make('카라멜마끼아토')">
+</body>
+</html>

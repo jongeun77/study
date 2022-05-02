@@ -14,3 +14,4 @@ console.log('두수의몫 : %d', result);
 
 result = a%b;
 console.log('두수의 나머지 : %d', result);
+

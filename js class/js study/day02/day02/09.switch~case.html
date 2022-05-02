@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>합격 불합격</title>
+    <script>
+        
+        'use strict'
+        let rank = prompt('A~F 입력');
+
+        if(rank == 'A' || rank =='B'|| rank =='C'){
+            document.write('합격');
+        }else if( rank == 'D' || rank =='E'){
+            document.write('대기');
+        }else{
+            document.write('블합격');
+        }
+
+
+        // switch(rank){
+        //     case 'A' :
+        //     case 'B' :
+        //     case 'C' :document.write('합격'); break;
+        //     case 'D' :
+        //     case 'E' :document.write('불합격'); break;
+        //     default : document.write('불합격');
+        // }
+    </script>
+</head>
+<body>
+    <script>
+        
+    </script>
+    <pre>
+        합격 불합격
+        let rank = prompt('A~F 입력');
+        switch(rank){
+            case 'A' :document.write('합격'); break;
+            case 'B' :document.write('합격'); break;
+            case 'C' :document.write('합격'); break;
+            case 'D' :document.write('대기'); break;
+            case 'E' :document.write('불합격'); break;
+            default : document.write('불합격');
+        }
+
+        switch(변수){
+            case 값1:
+            case 값2:
+            case 값3: 실행문; break;
+        }
+    </pre>
+</body>
+</html>

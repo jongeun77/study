@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        'use strict'
+        let name = '루나';
+        let age = 22;
+        let addr ='서울';
+        let tel = '010-000-1111';
+        let msg ='이름은'+name+'이고\"나이는\"'+age+
+        '살이며 \'집주소\'는 \\' +addr+'이고 연락처는' +tel+ '입니다.';
+
+            document.write(msg, '<br>')
+
+        let msg1 = `이름은 ${name}이고 나이는 ${age}살이며 ${addr}집주소는 이고 ${tel}연락처는 입니다.`
+        document.write(msg1, '<br>')
+
+
+        let msg2 = `
+            이름은 "${name}" 이고
+            나이는 '${age}'
+            주소는 ${addr}/하하
+            연락처는 ${tel}
+        `
+        document.write(msg2, '<br>')
+        document.write('==========<br>')
+        
+        //${},따옴표 수식도 다 가능함 백틱?
+        
+        const a =10;
+        const b =20;
+        const msg3 = `두수의 합 ${a}와 ${b}의 합은 ${a+b}입니다.`;
+        document.write(msg3, '<br>')
+        document.write('==========<br>')
+    </script>
+</head>
+<body>
+    <script>
+    </script>
+    <pre>
+        템플릿 리터널
+        백틱:  `` (옵션+ ~)
+        1. 멀티라인 개형이 자유롭다
+        2. 보간법 사용한다 ( 유동값을 넣을수 있다)
+        ${수식}
+        ${변수}
+        3. 작은따옴표, 이중따옴표 슬러시등 사용 자유롭다
+        이스케이프 형식을 사용하지 않아도 된다.
+        4.html 취약점을 안전하고 사용하도록 보안문제가 가능하가(xss, sql등)
+
+    </pre>
+</body>
+</html>

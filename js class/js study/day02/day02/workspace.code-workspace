@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../design-base"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js class"
+	}
+}

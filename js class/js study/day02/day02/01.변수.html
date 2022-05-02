@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>호이스팅</title>
+    <script>
+        
+        //console.log(name);//할당하기전에 쓰지말라는(호이스팅은 되지만 안사용)
+        
+        let name;//선언
+        name = '깁태리1';//할당
+        // console.log(name);
+
+        //tdz: 할당하기전에는 사용할수 없는 구간
+        //tdz 영역에 있는것은 사용할수 없다
+        console.log(name2);
+        const name2 = '김다미';
+    </script>
+</head>
+<body>
+    <script>
+        
+    </script>
+    <pre>
+        호이스팅(hoisting)이란, 인터프리터가 변수와 함수의 메모리 공간을 선언 전에 미리 할당하는 것을 의미합니다. var로 선언한 변수의 경우 호이스팅 시 undefined로 변수를 초기화합니다. 반면 let과 const로 선언한 변수의 경우 호이스팅 시 변수를 초기화하지 않습니다.
+
+        스코프내부에서 변수선언은 최상위로 선언된것 처럼 사용한다.
+        {} - 최상단으로 끌어 올려온것 같은 현상 
+
+        변수선언
+        1. 선언 : 변수 등록( 변수는 스코프가 참조하는 대상)
+        2. 초기화 : 변수 공간의 메모리 확보 undefinded
+        3. 할당 : 값을 할당
+
+        var  
+        1.선언및 초기화 
+        2.할당
+
+        let 
+        1.선언
+        2.초기화
+        3.할당
+
+        const 
+        선언+ 초기화 + 할당
+
+        var: 함수스코프
+        let, const : 함수스코프, 블럭스코프
+
+        함수: function(){}
+        블럭: if(){}, for(){}
+
+        tdz: 할당하기전에 사용할수 없는 영역
+    </pre>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 구구단</title>
+    <style>
+        
+    </style>
+    <script>
+        // let m = prompt('값입력');
+        // let output = isNaN(m);
+        // document.write(output);
+        let dan= prompt('단을 입력하세요', '2~9중에 입력');
+
+        if( dan == ''|| isNaN(dan)){
+            alert('올바른 형식이 아니다')
+        }else if( dan <2 || dan>9){
+            alert('범위초과')
+        }else{ 
+            for(let i =1; i<=9; i++){
+                document.write(dan+'x'+i+ '=' +(dan*i)+ '<br>');
+            }
+        }
+        
+       
+    </script>
+</head>
+<body>
+   
+    <pre>
+        isNaN : Not a number 숫자문자 판별
+        숫자, 공백: false
+        문자: true
+////
+        단입력
+        문자,공백- 올바른 형식이 아닙니다
+        2~9 범위 아니면 -범위초과, 다시입력 alert
+
+        그외 나머지가 들어오면 결과 출력
+        2 x 1= 2...
+    </pre>
+</body>
+</html>

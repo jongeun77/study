@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while문</title>
+    <script>
+        'use strict'
+      /*    let x =1;
+         while( x<=10){
+             document.write( x + '번째<br>');
+             x++;
+         } */
+         //for let x=0; x>=10; x++;
+
+         //2의 배수
+         /* let x = 1;
+         while( x <=20){
+             if(x%2 ==0){
+                 document.write( x, '<br>');
+             }
+             x++;
+         } */
+
+        //1~50까지 중에서 5의 배수의 합
+
+        let x = 1; sum = 0;
+        while( x <= 50){
+            if( x % 5 ==0 ){
+                sum +=x;
+            }
+            x++;
+        }
+        document.write('합:'+sum);
+
+    </script>
+</head>
+<body>
+    <script>
+        
+    </script>
+    <pre>
+        초기값; 
+        while(조건식){
+            실행문;
+            증감식
+        
+        }
+
+        초기값;
+        while(true){
+            무한반목
+        }
+    </pre>
+</body>
+</html>

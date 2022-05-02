@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        select{
+            width: 150px; height: 40px; border: 1px solid #000; margin-right: 10px; padding-left: 10px;
+        }
+    </style>
+    <script>
+        'use strict'
+        let year ='<select>';
+            for(let i = 2022; i>=1900; i--){
+                year +='<option>' +i+'년</option>';
+            }
+            year +='</select>';
+            document.write(year);
+            
+        let month = '<select>'
+            for( let i = 1; i<=12; i++){
+                month += '<option>' +i+ '월</option>';
+            }
+            month +='</select>';
+            document.write(month);
+            
+        let day = '<select>';
+            for( let i = 1; i <=30; i++){
+            day += '<option>'+i+'일</option>'
+            
+            }
+            day += '</select>'
+
+    document.write(day)
+    </script>
+</head>
+<body>
+    <script>
+        
+    </script>
+    <pre>
+        1. 1일~ 30일까지 : select ~ option
+        2. year 2033~1900년
+        month 1~12월
+    </pre>
+</body>
+</html>
